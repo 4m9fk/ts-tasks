@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "build": "test",
+    "build": "tsc",
     "test": "jest",
     "lint": "npx eslint --ext .ts  tasks/",
     "prepare": "husky install"
