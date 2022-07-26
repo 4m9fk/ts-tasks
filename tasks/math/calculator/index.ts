@@ -1,18 +1,17 @@
-type operatorRange = '+' | '-' | '/' | '*';
+type OperatorRange = "+" | "-" | "/" | "*";
 
-export const calculator = (a: number, operator: operatorRange, c: number): number => {
+export const calculator = (a: number, operator: OperatorRange, c: number): number => {
   switch (operator) {
-    case '+':
+    case "+":
       return a + c;
-    case '-':
+    case "-":
       return a - c;
-    case '/':
+    case "/":
       return a / c;
-    case '*':
+    case "*":
       return a * c;
     default:
-      // throw new Error();
       const exhaustiveCheck: never = operator;
-      throw new Error();
+      throw new Error("Calculator does not support the provided operator");
   }
 };
