@@ -1,9 +1,18 @@
-export const calculator = (a:number,b:string,c:number):number | string => {
-    switch(b){
-        case "+": return a + c;
-        case "-": return a - c;
-        case "/": return a / c;
-        case "*": return a * c;
-        default: return "Calculator does not support this operator";
-    }
-}
+type operatorRange = '+' | '-' | '/' | '*';
+
+export const calculator = (a: number, operator: operatorRange, c: number): number => {
+  switch (operator) {
+    case '+':
+      return a + c;
+    case '-':
+      return a - c;
+    case '/':
+      return a / c;
+    case '*':
+      return a * c;
+    default:
+      // throw new Error();
+      const exhaustiveCheck: never = operator;
+      throw new Error();
+  }
+};
