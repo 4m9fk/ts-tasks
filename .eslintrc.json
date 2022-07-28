@@ -19,6 +19,7 @@
       "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module",
+        "tsconfigRootDir": ["ts-tasks"],
         "project": ["./tsconfig.json"] // Specify it only for TypeScript files
       }
     }
