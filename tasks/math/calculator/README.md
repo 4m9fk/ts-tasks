@@ -4,8 +4,8 @@ Create a function that takes two numbers and a mathematical operator + - / \* an
 
 ### Examples
 
-> calculator(2, "+", 2) ➞ 4
+> calculator(2, '+', 2) ➞ 4
 
-> calculator(2, "\*", 2) ➞ 4
+> calculator(8, '-', 2) ➞ 6
 
-> calculator(4, "/", 2) ➞ 2
+> calculator(4, '/', 2) ➞ 2
