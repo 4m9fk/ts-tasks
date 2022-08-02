@@ -1,4 +1,4 @@
-import { calculator } from "./index";
+import { calculator, OperatorRange } from "./index";
 
 describe("calculator", () => {
   it("should return 4", () => {
@@ -14,6 +14,8 @@ describe("calculator", () => {
     expect(calculator(7, "-", 4)).toBe(3);
   });
   it("should return error", () => {
-    expect(calculator).toThrowError(new Error("Calculator does not support the provided operator"));
+    expect(() => calculator(7, "&" as OperatorRange, 6)).toThrow(
+      new Error("Calculator does not support the provided operator"),
+    );
   });
 });

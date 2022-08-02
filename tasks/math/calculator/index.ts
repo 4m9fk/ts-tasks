@@ -1,4 +1,4 @@
-type OperatorRange = "+" | "-" | "/" | "*";
+export type OperatorRange = "+" | "-" | "/" | "*";
 
 export const calculator = (a: number, operator: OperatorRange, c: number): number => {
   switch (operator) {
