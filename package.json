@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "lint": "npx eslint --ext .ts  tasks/",
+    "lint": "npx eslint --ext .ts  tasks/ --fix",
     "prepare": "husky install"
   },
   "repository": {
