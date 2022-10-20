@@ -5,8 +5,8 @@
   "main": "index.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest --coverage",
-    "lint": "npx eslint --ext .ts  tasks/",
+    "test": "jest",
+    "lint": "npx eslint --ext .ts  tasks/ --fix",
     "prepare": "husky install"
   },
   "repository": {
